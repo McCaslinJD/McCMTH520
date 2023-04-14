@@ -120,15 +120,30 @@ def palindrome():
             x = str(i*j)
             y = x[::-1]
             if x == y:
-                z = x
-                factor1 = str(i)
-                factor2 = str(j)
-    print(factor1 + "times" + factor2 + "=" + z)
+                x = int(x)
+                if x>= z:
+                    
+                    z = x
+                    factor1 = str(i)
+                    factor2 = str(j)
+    print(factor1 + " times " + factor2 + " = " + str(z))
+    return z
     raise NotImplementedError("Problem 7 Incomplete")
+palindrome()
 
 # Problem 8
 def alt_harmonic(n):
     """ Return the partial sum of the first n terms of the alternating
     harmonic series, which approximates ln(2).
     """
+    n = list(range(1,n+1,1))
+    for i in n:
+        if n[i-1]%2 == 0:
+            n[i-1] = -1/n[i-1]
+        else:
+            n[i-1] = 1/n[i-1]
+    print(sum(n))
+    return sum(n)
     raise NotImplementedError("Problem 8 Incomplete")
+alt_harmonic(500000)
+
