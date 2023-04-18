@@ -145,5 +145,5 @@ def alt_harmonic(n):
     print(sum(n))
     return sum(n)
     raise NotImplementedError("Problem 8 Incomplete")
-alt_harmonic(500000)
+
 
