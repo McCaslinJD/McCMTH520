@@ -71,7 +71,6 @@ def hypot(a, b):
     c = cal.sqrt(c)
     return c
     raise NotImplementedError("Problem 3 Incomplete")
-print(hypot(3,4))
 
 # Problem 4
 def power_set(A):
@@ -83,6 +82,13 @@ def power_set(A):
     Returns:
         (list(sets)): The power set of A as a list of sets.
     """
+    l = len(A)
+    pset = []
+    for n in range(l+1):
+        new_sets = list(combinations(A,n))
+        for s in new_sets:
+            pset.append(s)
+    return pset
     raise NotImplementedError("Problem 4 Incomplete")
 
 
