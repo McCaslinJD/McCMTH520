@@ -1,0 +1,36 @@
+04/29/23 04:54
+
+File 'python_intro.py' not found!
+
+-------------------------------------------------------------------------------
+
+04/29/23 04:59
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+NotImplementedError: Problem 3 Incomplete
+
+Problem 4 (10 points):
+NameError: name 's' is not defined
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (5 points):
+Score += 5
+
+Problem 7 (10 points):
+Score += 10
+
+Problem 8 (5 points):
+Score += 5
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 35/50 = 70.0%
+
+-------------------------------------------------------------------------------
+
