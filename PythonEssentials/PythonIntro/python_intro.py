@@ -24,7 +24,7 @@ def isolate(a, b, c, d, e):
     """ Print the arguments separated by spaces, but print 5 spaces on either
     side of b.
     """
-    print( a, "     ", b,"     ", c, d,e)
+    return( a, "     ", b,"     ", c, d,e)
     raise NotImplementedError("Problem 3 Incomplete")
 
 
@@ -40,9 +40,9 @@ def first_half(my_string):
         >>> first_half("ipython")
         'ipy'
     """
-    l = len(s)
+    l = len(my_string)
     l = l//2
-    return s[:l]
+    return my_string[:l]
     raise NotImplementedError("Problem 4 Incomplete")
 
 def backward(my_string):
