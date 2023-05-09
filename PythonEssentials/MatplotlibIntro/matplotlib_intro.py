@@ -154,8 +154,3 @@ def prob6():
 
     raise NotImplementedError("Problem 6 Incomplete")
 
-prob1()
-prob2()
-prob3()
-prob4()
-prob6()

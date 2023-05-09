@@ -1,9 +1,12 @@
 # lstsq_eigs.py
 """Volume 1: Least Squares and Computing Eigenvalues.
-<Name>
-<Class>
-<Date>
+<Jordan McCaslin>
+<MTH520>
+<5/8/2023>
 """
+import numpy as np
+from scipy import linalg as la
+import matplotlib.pyplot as plt
 
 # (Optional) Import functions from your QR Decomposition lab.
 # import sys
@@ -26,6 +29,11 @@ def least_squares(A, b):
     Returns:
         x ((n, ) ndarray): The solution to the normal equations.
     """
+    At = A.transpose()
+    Q, R = la.qr(A, mode = 'economic')
+    B = Q.transpose().dot(b)
+    x = la.solve_triangular(R,B)
+    return x
     raise NotImplementedError("Problem 1 Incomplete")
 
 # Problem 2
@@ -34,6 +42,22 @@ def line_fit():
     index for the data in housing.npy. Plot both the data points and the least
     squares line.
     """
+    data = np.load("LeastSquares_Eigenvalues/housing.npy")
+    year = data[:,0]
+    n = len(year)
+    price = data[:,1].reshape((n,1))
+    year = year.reshape((n,1))
+    constant = np.ones([n,1])
+    A = np.hstack((year,constant))
+    l = least_squares(A,price)
+    x = np.linspace(min(year),max(year), 100)
+    y = l[0]*x + l[1]
+    plt.scatter(year,price, label = 'Data Points')
+    plt.plot(x,y, label = " Least Squares Fit")
+    plt.legend()
+    plt.xlabel("Years Since 2000")
+    plt.ylabel("Housing Price Index")
+    return plt.show()
     raise NotImplementedError("Problem 2 Incomplete")
 
 
@@ -43,8 +67,29 @@ def polynomial_fit():
     the year to the housing price index for the data in housing.npy. Plot both
     the data points and the least squares polynomials in individual subplots.
     """
-    raise NotImplementedError("Problem 3 Incomplete")
+    data = np.load("LeastSquares_Eigenvalues/housing.npy")
+    year = data[:,0]
+    n = len(year)
+    x = np.linspace(min(year),max(year), 100)
+    price = data[:,1].reshape((n,1))
+    plt.scatter(year,price, label = 'Data')
+    A = np.vander(year,12)
+    for i in range(1,5):
+        n = i * 3
+        lab = "Polynomial fit of degree " + str(n)
+        An = A[:,12-n:12]
+        l = least_squares(An,price)
+        f = np.poly1d(l.transpose()[0])
+        y = f(x)
+        plt.plot(x,y, label = lab)
+    plt.legend()
+    plt.xlabel("Years since 2000")
+    plt.ylabel('Housing Price Index')
+    plt.title('Problem 3')
+    return plt.show()
 
+    raise NotImplementedError("Problem 3 Incomplete")
+polynomial_fit()
 
 def plot_ellipse(a, b, c, d, e):
     """Plot an ellipse of the form ax^2 + bx + cxy + dy + ey^2 = 1."""
