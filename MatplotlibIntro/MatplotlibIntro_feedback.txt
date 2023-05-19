@@ -10,3 +10,33 @@ File 'matplotlib_intro.py' not found!
 
 -------------------------------------------------------------------------------
 
+05/19/23 18:41
+
+Problem 1 (10 points):
+prob1() plot does not match specifications
+Score += 0
+
+Problem 2 (10 points):
+prob2() plot does not match specifications
+Score += 0
+
+Problem 3 (10 points):
+prob3() plot does not match specifications
+Score += 0
+
+Problem 4 (5 points):
+prob4() plot does not match specifications
+Score += 0
+
+Problem 6 (10 points):
+prob6() plot does not match specifications
+Score += 0
+
+Code Quality (5 points):
+Code can be improved for prob6()
+Score += 0
+
+Total score: 0/50 = 0.0%
+
+-------------------------------------------------------------------------------
+
