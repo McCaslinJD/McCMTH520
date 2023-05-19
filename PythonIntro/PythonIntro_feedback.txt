@@ -64,3 +64,34 @@ Total score: 35/50 = 70.0%
 
 -------------------------------------------------------------------------------
 
+05/19/23 12:02
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+isolate() failed
+Score += 0
+
+Problem 4 (10 points):
+NameError: name 's' is not defined
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (5 points):
+Score += 5
+
+Problem 7 (10 points):
+Score += 10
+
+Problem 8 (5 points):
+Score += 5
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 35/50 = 70.0%
+
+-------------------------------------------------------------------------------
+
