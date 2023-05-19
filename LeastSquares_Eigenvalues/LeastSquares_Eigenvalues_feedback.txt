@@ -1,0 +1,19 @@
+05/19/23 13:01
+
+Problem 1 (15 points):
+Score += 15
+
+Problem 2 (15 points):
+FileNotFoundError: [Errno 2] No such file or directory: 'LeastSquares_Eigenvalues/housing.npy'
+
+Problem 3 (15 points):
+should be four subplots; degree 3 fit looks off
+Score += 11
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 31/50 = 62.0%
+
+-------------------------------------------------------------------------------
+
