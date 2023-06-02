@@ -10,3 +10,68 @@ IndexError while loading 'standard_library.py': list index out of range
 
 -------------------------------------------------------------------------------
 
+06/02/23 18:14
+
+ValueError while loading 'standard_library.py': could not convert string to float: 'JordanMcCaslin'
+
+-------------------------------------------------------------------------------
+
+06/02/23 18:14
+
+IndexError while loading 'standard_library.py': list index out of range
+
+-------------------------------------------------------------------------------
+
+06/02/23 18:16
+
+IndexError while loading 'standard_library.py': list index out of range
+
+-------------------------------------------------------------------------------
+
+06/02/23 18:16
+
+IndexError while loading 'standard_library.py': list index out of range
+
+-------------------------------------------------------------------------------
+
+06/02/23 18:16
+
+NameError while loading 'standard_library.py': name 'shut_the_box' is not defined
+
+-------------------------------------------------------------------------------
+
+06/02/23 18:17
+
+IndexError while loading 'standard_library.py': list index out of range
+
+-------------------------------------------------------------------------------
+
+06/02/23 18:18
+
+Problem 1 (5 points):
+IndexError: Replacement index 1 out of range for positional args tuple
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (10 points):
+Score += 10
+
+Problem 4 (10 points):
+	power_set(A) does not contain set() (the empty set)
+	power_set(A) does not contain set(A)
+	power_set(A) does not contain set() (the empty set)
+	power_set(A) does not contain set(A)
+	power_set(A) does not contain set() (the empty set)
+	power_set(A) does not contain set(A)
+	power_set(A) does not contain set() (the empty set)
+	power_set(A) does not contain set(A)
+Score += 0
+
+Code Quality (20 points):
+Score += 20
+
+Total score: 35/50 = 70.0%
+
+-------------------------------------------------------------------------------
+

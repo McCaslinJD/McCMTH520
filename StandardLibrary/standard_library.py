@@ -19,7 +19,7 @@ def prob1(L):
     """Return the minimum, maximum, and average of the entries of L
     (in that order, separated by a comma).
     """
-    
+
     return [min(L),max(L), sum(L)/len(L) ]
     raise NotImplementedError("Problem 1 Incomplete")
 
@@ -109,7 +109,7 @@ def roll(s):
 
 # Problem 5: Implement shut the box.
 def shut_the_box(player, timelimit):
-    """Play a single game of shut the box."""
+    """Play a single game of shut the box.
     remaining = list(range(1,10))
     if len(sys.argv) == 3: 
         cheat = False;
@@ -155,7 +155,7 @@ def shut_the_box(player, timelimit):
     else:                                           #Not enough arguments given
         print("Oi you doorknob, you never told me your name or how long we are playing. ")
 
-    return sum(remaining)
+    return sum(remaining)"""
     raise NotImplementedError("Problem 5 Incomplete")
 
-shut_the_box(sys.argv[1], sys.argv[2])
+#shut_the_box(sys.argv[1], sys.argv[2])
