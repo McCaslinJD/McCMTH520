@@ -90,10 +90,10 @@ def prob6(A):
                [ 0.        ,  1.        ,  0.        ],
                [ 0.33333333,  0.33333333,  0.33333333]])
     """
-    s = x.sum(axis =1)
+    s = A.sum(axis =1)
     s = np.array([s]).transpose()
-    M = np.tile(s, len(x[1,:]))
-    M = np.divide(x,M)
+    M = np.tile(s, len(A[1,:]))
+    M = np.divide(A,M)
     return M
     raise NotImplementedError("Problem 6 Incomplete")
 

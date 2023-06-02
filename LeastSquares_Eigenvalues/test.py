@@ -52,5 +52,5 @@ def polynomial_fit():
 
 
 polynomial_fit()
-print('pleaase wooooooork')
+
 

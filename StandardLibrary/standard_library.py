@@ -3,6 +3,7 @@ import calculator as cal
 import time
 import box
 import sys
+import numpy as np
 from random import randint
 from itertools import combinations
 
@@ -20,8 +21,10 @@ def prob1(L):
     (in that order, separated by a comma).
     """
 
-    return [min(L),max(L), sum(L)/len(L) ]
+    return (min(L),max(L), sum(L)/len(L))
     raise NotImplementedError("Problem 1 Incomplete")
+
+print(prob1(np.arange(0,10)))
 
 
 # Problem 2
@@ -94,6 +97,8 @@ def power_set(A):
         new_sets = list(combinations(A,n))
         for s in new_sets:
             pset.append(s)
+    pset.append(set(A))
+    pset.append(set())
     return pset
     raise NotImplementedError("Problem 4 Incomplete")
 

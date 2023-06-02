@@ -5,7 +5,7 @@
 <Date>
 """
 import numpy as np
-from cvxopt import matrix, solver
+import cvxpy as cp
 
 def prob1():
     """Solve the following convex optimization problem:
@@ -83,7 +83,7 @@ def prob3():
 
     return(x.value,  problem.solve() )
     raise NotImplementedError("Problem 3 Incomplete")
-
+print(prob3())
 
 # Problem 4
 def prob4():
