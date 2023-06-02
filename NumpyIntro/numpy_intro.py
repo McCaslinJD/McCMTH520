@@ -14,6 +14,7 @@ def prob1():
     return A.dot(B)
     raise NotImplementedError("Problem 1 Incomplete")
 
+print (prob1())
 
 def prob2():
     """ Define the matrix A as an array. Return the matrix -A^3 + 9A^2 - 15A. """
@@ -47,13 +48,13 @@ def prob4(A):
         >>> prob4(A)
         array([0, 0, 3])
     """
-    y = A
-    mask = y <0
-    y[mask] = 0
-    return(y)
-
+    mask = A <0
+    A[mask] = 0
+    return(A)
     raise NotImplementedError("Problem 4 Incomplete")
 
+A = prob1();
+print(prob4(A))
 
 def prob5():
     """ Define the matrices A, B, and C as arrays. Use NumPy's stacking functions
