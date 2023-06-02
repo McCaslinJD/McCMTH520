@@ -118,7 +118,17 @@ def prob5(A, b):
         The optimizer x (ndarray)
         The optimal value (float)
     """
-    raise NotImplementedError("Problem 5 Incomplete")
+    (m,n) = A.shape
+    x = cp.Variable(n, nonneg = True)
+    obective = cp.Minimize(cp.norm( (A @ x) - b ,2))
+    r = np.ndarray((n))
+    r = np.ones_like(r)
+    constraint = [ r.T @ x == 1]
+    problem = cp.Problem(obective, constraint)
+    problem.solve()
+    return (x.value, problem.solve())
+    
+
 
 
 # Problem 6
