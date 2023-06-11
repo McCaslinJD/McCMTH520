@@ -12,7 +12,7 @@ def least_squares(A,b):
 
 
 def prob2():
-    data = np.load("LeastSquares_Eigenvalues/housing.npy")
+    data = np.load("housing.npy")
     year = data[:,0]
     n = len(year)
     price = data[:,1].reshape((n,1))
@@ -27,7 +27,6 @@ def prob2():
     plt.show()
 
 
-
 def polynomial_fit():
     data = np.load("housing.npy")
     year = data[:,0]
@@ -37,7 +36,7 @@ def polynomial_fit():
     plt.scatter(year,price, label = 'Data')
     A = np.vander(year,12)
     for i in range(1,5):
-        n = i * 3
+        n =  i * 3 
         lab = "Polynomial fit of degree " + str(n)
         An = A[:,12-n:12]
         l = least_squares(An,price)

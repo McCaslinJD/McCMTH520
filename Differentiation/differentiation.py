@@ -1,14 +1,17 @@
 # differentiation.py
 """Volume 1: Differentiation.
+
+
 <Name>
 <Class>
 <Date>
 """
 
-
 # Problem 1
 def prob1():
     """Return the derivative of (sin(x) + 1)^sin(cos(x)) using SymPy."""
+    x = sy.symbols('x')
+    sy.diff
     raise NotImplementedError("Problem 1 Incomplete")
 
 
