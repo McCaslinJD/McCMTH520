@@ -75,3 +75,28 @@ Total score: 35/50 = 70.0%
 
 -------------------------------------------------------------------------------
 
+06/13/23 20:20
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (10 points):
+Score += 10
+
+Problem 4 (10 points):
+	len(power_set(A)) != 2**len(A)
+	len(power_set(A)) != 2**len(A)
+	len(power_set(A)) != 2**len(A)
+	len(power_set(A)) != 2**len(A)
+Score += 0
+
+Code Quality (20 points):
+Score += 20
+
+Total score: 40/50 = 80.0%
+
+-------------------------------------------------------------------------------
+
