@@ -4,3 +4,22 @@ drazin.py has not been modified yet
 
 -------------------------------------------------------------------------------
 
+06/14/23 00:48
+
+Problem 1 (10 points):
+Score += 10
+
+Problem 2 (10 points):
+Score += 10
+
+Problem 3 (10 points):
+NotImplementedError: Problem 3 Incomplete
+
+Code Quality (20 points):
+Code can be improved for effective_resistance()
+Score += 0
+
+Total score: 20/50 = 40.0%
+
+-------------------------------------------------------------------------------
+
