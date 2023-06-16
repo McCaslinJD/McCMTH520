@@ -110,7 +110,17 @@ def effective_resistance(A):
     """
     L = laplacian(A)
     (n,n,) = A.shape
-    raise NotImplementedError("Problem 3 Incomplete")
+    I = np.eye(n)
+    R = np.zeros((n,n))
+    for i in range(n):
+        for j in range(n):
+            if i!= j:
+                tL = L.copy()
+                tL[j,:] = I[j,:]
+                tL = drazin_inverse(tL)
+                R[i,j] = tL[i,i]
+
+    return R
 
 
 # Problems 4 and 5
