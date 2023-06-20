@@ -42,7 +42,7 @@ def line_fit():
     index for the data in housing.npy. Plot both the data points and the least
     squares line.
     """
-    data = np.load("LeastSquares_Eigenvalues\housing.npy")
+    data = np.load("housing.npy")
     year = data[:,0]
     n = len(year)
     price = data[:,1].reshape((n,1))
@@ -67,7 +67,7 @@ def polynomial_fit():
     the year to the housing price index for the data in housing.npy. Plot both
     the data points and the least squares polynomials in individual subplots.
     """
-    data = np.load("LeastSquares_Eigenvalues\housing.npy")
+    data = np.load("housing.npy")
     year = data[:,0]
     n = len(year)
     x = np.linspace(min(year),max(year), 100)
